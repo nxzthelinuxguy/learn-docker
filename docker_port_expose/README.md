@@ -1,5 +1,6 @@
 # Docker Port Expose
 
+## Container does not have a ip of itself
 ## Docker port expose is used to expose port of a running container
 ## This can be achieved in 2 ways
 ### EXPOSE
@@ -20,5 +21,5 @@
 	## Check port of the local machine
 		netstat -tnlp  (assuming net-tools is installed)
 
-### Verify the port on browser
+### Jenkins is now accessible via host ip and exposed port
 	http://ip:8080
