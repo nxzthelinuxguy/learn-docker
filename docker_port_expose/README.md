@@ -1,6 +1,6 @@
 # Docker Port Expose
-#### 1. Container does not have a ip of itself
-#### 2. Docker port expose is used to expose port of a running container
+#### 		Container does not have a ip of itself
+#### 		Docker port expose is used to expose port of a running container
 
 ### THIS COULD BE ACHIEVED IN 2 WAYS
 
