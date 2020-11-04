@@ -13,7 +13,7 @@ Container Creation
 ################ Docker Basics #####################
 
 SEARCH DOCKER IMAGES
-	- docker search image-name
+ $ docker search image-name
 
 PULL / DOWNLOAD DOCKER IMAGES
 	- docker pull image-name
