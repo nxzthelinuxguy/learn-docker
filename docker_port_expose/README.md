@@ -43,7 +43,11 @@
 		2. Only specify EXPOSE
 		3. Specify EXPOSE and PUBLISH (-p)
 
-#### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only be accessible from inside the container itself
+#### If you specify neither EXPOSE nor PUBLISH (-p) 
+	 the service in the container will only be accessible from inside the container itself.
 
-#### If you EXPOSE a port, the service in the container will not be accessible from outside docker host, but is accessible to inside docker containers. 
-<h3>EXPOSE is good for inter-container communication. </h3>
+#### If you EXPOSE a port
+	 the service in the container 
+		will not be accessible from outside docker host
+	 	but is accessible to inside docker containers. 
+<h4>EXPOSE is good for inter-container communication. </h4>
