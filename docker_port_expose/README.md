@@ -35,14 +35,14 @@
 
 ## Difference between EXPOSE and PUBLISH (-p)
 
-	### Basically you have three options:
+#### Basically you have three options:
 		1. Neither specify EXPOSE nor PUBLISH (-p)
 		2. Only specify EXPOSE
 		3. Specify EXPOSE and PUBLISH (-p)
 
-	### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only
+####	### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only
 	    be accessible from inside the container itself
 
-	### If you EXPOSE a port, the service in the container will not be accessible from outside docker, 
+####	### If you EXPOSE a port, the service in the container will not be accessible from outside docker, 
 	    but from inside docker containers 
 	    EXPOSE is good for inter-container communication
