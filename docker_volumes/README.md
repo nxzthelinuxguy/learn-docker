@@ -48,7 +48,7 @@
 ## Create some files on VOLUME mentioned, in our case "/root/web-share"
 	ls -ld /root/web_share
 
-	echo "I AM WEB SERVER 1" > /root/web-share/index.html
+	echo "I AM WEB SERVER 1" > /root/web_share/index.html
 	exit
 
 ## CREATE ONE MORE CONTAINER AND SHARE THE VOLUME
