@@ -12,26 +12,26 @@ Container Creation
 
 ################ Docker Basics #####################
 
-SEARCH DOCKER IMAGES
+## SEARCH DOCKER IMAGES
  $ docker search image-name
 
-PULL / DOWNLOAD DOCKER IMAGES
+## PULL / DOWNLOAD DOCKER IMAGES
 	- docker pull image-name
 
-LIST DOWNLOADED IMAGES
+## LIST DOWNLOADED IMAGES
 	- docker images
 
-CREATE A CONTAINER 
+## CREATE A CONTAINER 
 	- docker run -it -d --name container-name image-name /bin/bash
 		- i: interactive
    	  	- t: TTY
    	  	- d: run as a daemon
    	  	- --name: NAME OF CONTAINER
 
-START A CONTAINER
+## START A CONTAINER
 	- docker start container-name
 
-STOP A CONTAINER
+## STOP A CONTAINER
 	- docker stop container-name
 
 TO GO INSIDE THE CONTAINER
