@@ -12,47 +12,48 @@ Container Creation
 
 ################ Docker Basics #####################
 
-# SEARCH DOCKER IMAGES
-docker search <image-name>
+SEARCH DOCKER IMAGES
+	- docker search image-name
 
-# PULL / DOWNLOAD DOCKER IMAGES
- docker pull <image-name>
+PULL / DOWNLOAD DOCKER IMAGES
+	- docker pull image-name
 
-# LIST DOWNLOADED IMAGES
- docker images
+LIST DOWNLOADED IMAGES
+	- docker images
 
-#CREATE A CONTAINER 
- docker run -it -d --name <container-name> <image-name> /bin/bash
-   i: interactive
-   t: TTY
-   d: run as a daemon
-   --name: NAME OF CONTAINER
+CREATE A CONTAINER 
+	- docker run -it -d --name container-name image-name /bin/bash
+		- i: interactive
+   	  	- t: TTY
+   	  	- d: run as a daemon
+   	  	- --name: NAME OF CONTAINER
 
-# START A CONTAINER
- docker start <container-name>
+START A CONTAINER
+	- docker start container-name
 
-# STOP A CONTAINER
- docker stop <container-name>
+STOP A CONTAINER
+	- docker stop container-name
 
-#TO GO INSIDE THE CONTAINER
- docker attach <container-name>  --> it will stop the container once exit 
+TO GO INSIDE THE CONTAINER
+	- docker attach container-name  --> it will stop the container once exit 
 
-# IF YOU WANT TO LEAVE WITHOUT STOPPING CONTAINER
- docker exec -it <container-name> /bin/bash  --> container will run even after exit
+IF YOU WANT TO LEAVE WITHOUT STOPPING CONTAINER
+	- docker exec -it container-name /bin/bash  
+	- --> container will run even after exit
 
-# TO SEE ALL THE CONTAINERS
- docker ps -a
+TO SEE ALL THE CONTAINERS
+	- docker ps -a
 
-# TO SEE ONLY RUNNING CONTAINERS
- docker ps
+TO SEE ONLY RUNNING CONTAINERS
+	- docker ps
 
-# TO DELETE A CONTAINER
- docker rm <container-name> 
+TO DELETE A CONTAINER
+	- docker rm container-name 
 
-# TO DELETE A IMAGE
- docker rmi  <image-name>
+TO DELETE A IMAGE
+	- docker rmi  image-name
 
-##################### Dockerfile ###########################
+# Dockerfile #
 
 Dockerfile is a text document which contains some set of instructions.
 
