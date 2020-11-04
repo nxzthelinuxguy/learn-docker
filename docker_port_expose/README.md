@@ -32,7 +32,9 @@
 	2. It is specifically for running new things in a already started container, be it a shell or some other process
 
 ##### Docker Attach (assume as console access)
-	Just connects the standard io of main process inside the container to the corresponding standard io error of current terminal
+	Just connects:
+	 THE standard i/o of main process inside the container
+	 TO the corresponding standard i/o error of current terminal
 
 ### Difference between EXPOSE and PUBLISH (-p)
 
@@ -41,9 +43,7 @@
 		2. Only specify EXPOSE
 		3. Specify EXPOSE and PUBLISH (-p)
 
-###### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only
-###### be accessible from inside the container itself
+#### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only be accessible from inside the container itself
 
-###### If you EXPOSE a port, the service in the container will not be accessible from outside docker host, 
-###### but is accessible to inside docker containers. 
+#### If you EXPOSE a port, the service in the container will not be accessible from outside docker host, but is accessible to inside docker containers. 
 <h3>EXPOSE is good for inter-container communication. </h3>
