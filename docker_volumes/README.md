@@ -39,3 +39,24 @@
 	1. while building the image (using Dockerfile)
 	2. creating a container 
 	--volumes-from and --privileged option in docker run command)
+
+## TRY TO CREATE VOLUME BY USING COMMAND
+	docker run -it -d --name webserver1 -v /root/web_share centos /bin/bash
+
+	docker exec -it webserver1 /bin/bash
+
+## Create some files on VOLUME mentioned, in our case "/root/web-share"
+	ls -ld /root/web_share
+
+	echo "I AM WEB SERVER 1" > /root/web-share/index.html
+	exit
+
+## CREATE ONE MORE CONTAINER AND SHARE THE VOLUME
+	docker run -it -d --name webserver2 --privileged=true --volumes-from webserver1 centos /bin/bash
+
+## VERIFY THE SHARED VOLUME	
+	docker exec -it webserver2 /bin/bash
+
+	ls -ld /root/web_share
+	echo "I AM WEBSERVER 2" >> /root/web_share/index.html
+	exit
