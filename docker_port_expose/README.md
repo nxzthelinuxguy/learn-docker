@@ -61,3 +61,12 @@
 		- NOT accessible FROM OUTSIDE docker host
 	 	- but accessible to INSIDE docker containers and host. 
 <h4>EXPOSE is good for inter-container communication. </h4>
+
+#### If you EXPOSE and PUBLISH a port
+###### SERVICE INSIDE THE CONTAINER
+		- Accesible from anywhere
+		- even outside docker
+
+#### IF YOU DO '-p' but do not expose
+######		The docker does an implicit expose.
+######		This is because, the port is open to the public, so it is also open for local containers.
