@@ -60,3 +60,33 @@
 	ls -ld /root/web_share
 	echo "I AM WEBSERVER 2" >> /root/web_share/index.html
 	exit
+
+# Host - Container Mapping
+### MAP the host local FS directory TO container directory.
+
+	mkdir $HOME/web_content
+	docker run -it -d --name webserver1 -v $HOME/web_content:/opt --privileged=true centos /bin/bash
+	touch $HOME/web_content/file{1..5}
+
+## VERIFY ON CONTAINER
+	docker exec -it webserver1 /bin/bash
+	ls -lrth /opt  
+	exit
+
+### LIST DOCKER VOLUMES
+	docker volume ls
+
+### CREATE DOCKER VOLUMES
+	docker volume create volume-name
+
+### REMOVE A DOCKER VOLUME
+	docker volume rm volume-name
+
+### REMOVE UNUSED DOCKER VOLUMES
+	docker volume prune
+
+### GET INFORMATION ABOUT A VOLUME
+	docker volume inspect volume-name
+
+### GET INFORMATION ABOUT A CONTAINER
+	docker container inspect container-name
