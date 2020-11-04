@@ -1,3 +1,9 @@
+# NOTE:
+## Volumes can only be created
+	1. while building the image (using Dockerfile)
+	2. creating a container 
+	- (--volumes-from and --privileged      option in docker run command)
+
 # build the container from given Dockerfile.
 	docker build -t myimage .
 
@@ -30,5 +36,3 @@
 	1. while building the image (using Dockerfile)
 	2. creating a container 
 	- (--volumes-from and --privileged      option in docker run command)
-
- 
