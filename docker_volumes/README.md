@@ -78,7 +78,7 @@
 ### LIST DOCKER VOLUMES
 	docker volume ls
 
-### CREATE DOCKER VOLUMES
+### CREATE A DOCKER VOLUME
 	docker volume create volume-name
 
 ### REMOVE A DOCKER VOLUME
