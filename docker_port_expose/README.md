@@ -4,7 +4,7 @@
 ## Docker port expose is used to expose port of a running container
 ## This can be achieved in 2 ways
 ### EXPOSE
-	EXPOSE command is used in a Dockerfile
+	EXPOSE command is used inside a Dockerfile
 	It is used for internal communication between the containers and  the docker host.
 
 ### -p
