@@ -1,8 +1,9 @@
 # Docker Port Expose
+	<p> Container does not have a ip of itself </p>
+	<p> Docker port expose is used to expose port of a running container </p>
 
-## Container does not have a ip of itself
-## Docker port expose is used to expose port of a running container
-## This can be achieved in 2 ways
+### This can be achieved in 2 ways
+
 ### EXPOSE
 	EXPOSE command is used inside a Dockerfile
 	It is used for internal communication between the containers and  the docker host.
@@ -40,9 +41,9 @@
 		2. Only specify EXPOSE
 		3. Specify EXPOSE and PUBLISH (-p)
 
-#### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only
-#### be accessible from inside the container itself
+##### If you specify neither EXPOSE nor PUBLISH (-p) , the service in the container will only
+##### be accessible from inside the container itself
 
-#### If you EXPOSE a port, the service in the container will not be accessible from outside docker, 
-#### but from inside docker containers. 
-####<h2>EXPOSE</h2> is good for inter-container communication.
+##### If you EXPOSE a port, the service in the container will not be accessible from outside docker host, 
+##### but is accessible to inside docker containers. 
+<h3>EXPOSE is good for inter-container communication. </h3>
