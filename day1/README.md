@@ -1,69 +1,68 @@
-#################### DOCKER DAY 1 ########################
+# DOCKER DAY 1 
+	Docker is built by integrating multiple different components
+	This is known as DOCKER ECOSYSTEM
+	Docker containers are layered file systems
 
-- Docker is built by integrating multiple different components
-- This is known as DOCKER ECOSYSTEM
-- Docker containers are layered file systems
+# Container Creation 
+## 3 ways:
+	1. pull the container from dockerhub
+	2. use Dockerfile
+	3. build container from existing container / image
 
-Container Creation 
-3 ways:
-	- pull the container from dockerhub
-	- use Dockerfile
-	- build container from existing container / image
-
-################ Docker Basics #####################
+# Docker Basics
 
 ## SEARCH DOCKER IMAGES
-	- docker search image-name
+	docker search image-name
 
 ## PULL / DOWNLOAD DOCKER IMAGES
-	- docker pull image-name
+	docker pull image-name
 
 ## LIST DOWNLOADED IMAGES
-	- docker images
+	docker images
 
 ## CREATE A CONTAINER 
-	- docker run -it -d --name container-name image-name /bin/bash
+	docker run -it -d --name container-name image-name /bin/bash
 		- i: interactive
    	  	- t: TTY
    	  	- d: run as a daemon
    	  	- --name: NAME OF CONTAINER
 
 ## START A CONTAINER
-	- docker start container-name
+	docker start container-name
 
 ## STOP A CONTAINER
-	- docker stop container-name
+	docker stop container-name
 
 ## TO GO INSIDE THE CONTAINER
-	- docker attach container-name  --> it will stop the container once exit 
+	docker attach container-name  --> it will stop the container once exit 
 
 ## IF YOU WANT TO LEAVE WITHOUT STOPPING CONTAINER
-	- docker exec -it container-name /bin/bash  
-	- --> container will run even after exit
+	docker exec -it container-name /bin/bash  
+	--> container will run even after exit
 
 ## TO SEE ALL THE CONTAINERS
-	- docker ps -a
+	docker ps -a
 
 ## TO SEE ONLY RUNNING CONTAINERS
-	- docker ps
+	docker ps
 
 ## TO DELETE A CONTAINER
-	- docker rm container-name 
+	docker rm container-name 
 
 ## TO DELETE A IMAGE
-	- docker rmi  image-name
+	docker rmi  image-name
 
-# Dockerfile #
+# Dockerfile 
 
-Dockerfile is a text document which contains some set of instructions.
+##Dockerfile is a text document which contains some set of instructions.
 
 ## Using Dockerfile:	
 
-	- We can create our own custom image with a desired state
+	1. We can create our own custom image with a desired state
 
-	- Automation of docker image creation
+	2. Automation of docker image creation
 
-COMPONENTS:
+## COMPONENTS:
 
 	- FROM:
 		For base image.
