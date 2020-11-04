@@ -13,7 +13,7 @@ Container Creation
 ################ Docker Basics #####################
 
 ## SEARCH DOCKER IMAGES
- $ docker search image-name
+	- docker search image-name
 
 ## PULL / DOWNLOAD DOCKER IMAGES
 	- docker pull image-name
@@ -34,30 +34,31 @@ Container Creation
 ## STOP A CONTAINER
 	- docker stop container-name
 
-TO GO INSIDE THE CONTAINER
+## TO GO INSIDE THE CONTAINER
 	- docker attach container-name  --> it will stop the container once exit 
 
-IF YOU WANT TO LEAVE WITHOUT STOPPING CONTAINER
+## IF YOU WANT TO LEAVE WITHOUT STOPPING CONTAINER
 	- docker exec -it container-name /bin/bash  
 	- --> container will run even after exit
 
-TO SEE ALL THE CONTAINERS
+## TO SEE ALL THE CONTAINERS
 	- docker ps -a
 
-TO SEE ONLY RUNNING CONTAINERS
+## TO SEE ONLY RUNNING CONTAINERS
 	- docker ps
 
-TO DELETE A CONTAINER
+## TO DELETE A CONTAINER
 	- docker rm container-name 
 
-TO DELETE A IMAGE
+## TO DELETE A IMAGE
 	- docker rmi  image-name
 
 # Dockerfile #
 
 Dockerfile is a text document which contains some set of instructions.
 
-Using Dockerfile:	
+## Using Dockerfile:	
+
 	- We can create our own custom image with a desired state
 
 	- Automation of docker image creation
