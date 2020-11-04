@@ -32,9 +32,9 @@
 ### Docker Attach VS Docker Exec
 
 #### Docker Exec 
-##### assume DOCKER EXEC as
-##### opening a new gnome terminal
-##### opening ssh connections, etc. 
+#### assume DOCKER EXEC as
+##### 		opening a new gnome terminal
+##### 		opening ssh connections, etc. 
 	
 	- It creates a new process in the container environment
 	
